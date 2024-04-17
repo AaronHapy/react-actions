@@ -24,6 +24,7 @@ jobs:
           application_name: react-app-test-aaron
           environment_name: React-app-env
           existing_bucket_name: elasticbeanstalk-us-west-2-905418000507
+          use_existing_version_if_available: true
           region: us-west-2
           version_label: ${{ github.sha }}
           deployment_package: deploy.zip
